@@ -34,3 +34,7 @@ Way 2. add the local repo to git hub clouds repo - you want to add something whi
 Way 1: clone the repo to local
 1) create a folder and add that to vs code
 2) goto terminal and use the command: git clone ssh link here   (to get ssh link goto github repo -->click on clone for download-->copy ssh id and complete the command execution on the terminal
+git clone git@github.com:Sudhavalli1106/practicematrimorphosis.git
+ for this you need to authentiate ssh
+3) alternatively you can add https for clone
+4) 
