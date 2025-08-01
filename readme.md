@@ -1,5 +1,7 @@
 Read me file:
 =============
+git hub helpful video:  https://www.youtube.com/watch?v=RGOj5yH7evk
+
 This is a demo repo created to practice certain basic commands. I am logging certain commands here.
 a) First sign in to git hub account
 b) click on "new" to crete a new repo
@@ -59,3 +61,6 @@ Git commands:
 commit will commit locally only. it wont update the cloud
 5. git pull origin main => pull the changes from cloud to local
 6. git push origin main => will push the local committed changes to cloud
+
+
+ 
