@@ -56,4 +56,6 @@ Git commands:
   after adding you can always use git status to check if this is mapped with git folder on local
   it will be into staging now. but unless you say commit, these will not be added to clouds. now at present is on local git. so you have to commit
 4. git commit -m "reason for commit" -m "reason you can give here in detail way"   (similar to dialog box that you got while you commit directly on git cloud)
-5. 
+commit will commit locally only. it wont update the cloud
+5. git pull origin main => pull the changes from cloud to local
+6. git push origin main => will push the local committed changes to cloud
