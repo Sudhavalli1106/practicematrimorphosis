@@ -49,7 +49,7 @@ Way 2: clone local folder to new repo:
 5) now we need to map local to cloud repo: use command => git remote add origin "give ssh here"
 
    
-How to find .git folder or is your folder got the clonned files from repo?
+How to find .git folder or is your folder got the clonned files from repo? - more detail info
 ==========================================================================
 now when you see vscode on local, your git folder looks very normal like others. how can you know if the folder is git-enabled? you can go to that file location you see a hidden file ".git" which indicate that its mapped to git.
 alternatively you can use command to list all the files. use ls -force on windows to show all files including hidden file.
