@@ -78,3 +78,29 @@ git add .
 git rebase --continue 
 resolve conflict
 git push
+
+**
+Steps for multiple addition, modification and deletion**
+
+# 1. Stage your changes
+git add .
+
+# 2. Commit locally
+git commit -m "Your local changes"
+
+# 3. Pull with rebase to handle conflict
+git pull --rebase origin main
+
+# 4. When conflict appears, edit the file:
+#    - Keep line 1 from local
+#    - Keep line 3 from remote
+#    - Save file
+
+# 5. Stage resolved file
+git add <filename>
+
+# 6. Continue rebase
+git rebase --continue
+
+# 7. Push changes
+git push origin main
