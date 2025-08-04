@@ -105,11 +105,76 @@ git rebase --continue
 # 7. Push changes
 git push origin main
 
+**All about staging:**
+Staging is like waiting area
+**Working Directory **→ **Staging Area** → **Repository**
+
+**Working Directory**: where you edit files
+
+**Staging Area**: where you put files using git add
+
+Repository: where files are saved forever using git commit
+
+
 **What is staging and unstaging?**
 **Staging:** you use "add" to staging meaning it is ready to be committed. only commited changes can be pushed
 **unstaging:** you use "reset" to unstage. these can't be committed. its like a file is not ready to be staged
 **restore**: git restore filename - its like undoing file changes on local**
 suppose after a commit you want to unstage:**
-reset: You can reset 
+a) if you want changes to be there on the local: git reset HEAD~1  (if you want to again stage, you must add and then commit)
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demoprog.js
+        
+b) if you want to just unstage, keep things on local added to git and waiting to commit: git reset --soft HEAD~1
+you can see status using git status and you will get the below text
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   demoprog.js
+c) if you want to unstage as well as undo changes on local: git reset --hard HEAD~1
+HEAD is now at 733dde5 staging & unstaging details added.md
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+**diff:**
+a) gif diff --staged:
+to get some valid values, you must change somefile use git add . and then use git diff --staged  =>diff of what is staged but not yet committed
+b) git diff
+diff of what is changed but not staged => for this you do some changes dont add or do anything simply run the command git diff
 
 
+Branching:
+==========
+1. git branch => gives the current branch name  => output would be like this * main   => here * represents that it is the current branch in which i am working
+2. git checkout => switch between branches
+   a) but if you have to create a new branch, use git checkout -b feature/addtocart   (-b indicates new branch)    you will get the message: Switched to a new branch 'feature/addtocart'
+now if you execute git branch command the output will be
+   
+* feature/addtocart
+  main
+  where * represent the current feature
+
+  suppose you want to move back to main then git checkout main   and then check with the help of git branch
+
+  Now i want to add file and map it to new branch:
+  ================================================
+  step 1: ensure you are on the right branch: git branch
+* feature/addtocart
+  main
+  step 2: create a new file (say practicebranch.js) on vs code manually
+  step 3: map that file to the new branch: git add .\practicebranch.js
+  step 4: git commit -m "added file practicebranch"
+[feature/addtocart d8ff3bd] added file practicebranch
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 practicebranch.js
+step 5: git push origin feature/addtocart
