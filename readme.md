@@ -104,3 +104,9 @@ git rebase --continue
 
 # 7. Push changes
 git push origin main
+
+**What is staging and unstaging?**
+**Staging:** you use "add" to staging meaning it is ready to be committed. only commited changes can be pushed
+**unstaging:** you use "reset" to unstage. these can't be committed. its like a file is not ready to be staged
+
+
