@@ -108,5 +108,8 @@ git push origin main
 **What is staging and unstaging?**
 **Staging:** you use "add" to staging meaning it is ready to be committed. only commited changes can be pushed
 **unstaging:** you use "reset" to unstage. these can't be committed. its like a file is not ready to be staged
+**restore**: git restore filename - its like undoing file changes on local**
+suppose after a commit you want to unstage:**
+reset: You can reset 
 
 
