@@ -71,4 +71,10 @@ commit will commit locally only. it wont update the cloud
 6. git push origin main => will push the local committed changes to cloud
 
 
+suppose you have 1st line which you want from local and you have line 2 from git and you want to accept.
+
+git add .
  
+git rebase --continue 
+resolve conflict
+git push
