@@ -1,3 +1,3 @@
-let s="sudhavalli"
+let s="sudha"
 let fname="parthasarathy"
 
