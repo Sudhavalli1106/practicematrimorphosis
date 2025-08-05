@@ -247,6 +247,31 @@ You don’t want to lose it either.
 
 Use git stash to save your work-in-progress, clean your working directory, and switch branches safely.
 
+Logging:
+git log 
+the above command will give you all the committed info
+git log shows the commit history of the current branch only by defaul
 
+| Command               | Shows                                    |
+| --------------------- | ---------------------------------------- |
+| `git log`             | Commit history of the **current branch** |
+| `git log branch-name` | Commit history of a **specific branch**  |
+| `git log --all`       | Commit history of **all branches**       |
+
+commit 5d025b1ef1f9c65a55c6c0c1f2f8d10c86efe574 (HEAD -> cartdetails, origin/cartdetails)
+Author: sudhavalli <sudhavalli.parthasarathy@matrimony.com>
+Date:   Tue Aug 5 15:29:16 2025 +0530
+
+    cart count added
+
+commit 2e38f736100bc7cc814c6fa7cd892f82a017cddb
+Author: Sudhavalli1106 <sudhavalli.parthasarathy@matrimony.com>
+Date:   Tue Aug 5 15:24:23 2025 +0530
+
+    added details on staging
+
+commit 64a1bda84f5ccb9099ed56a0abd4b60c5451a484
+Author: sudhavalli <sudhavalli.parthasarathy@matrimony.com>
+Date:   Tue Aug 5 14:34:22 2025 +0530
 
 
