@@ -233,6 +233,19 @@ git push origin main
 git branch -d feature
 git push origin --delete feature
 
+Why Use git stash?
+==================
+Let’s say:
+==========
+You're working on some changes (not committed yet).
+
+Suddenly you're asked to switch to another branch or fix a bug elsewhere.
+
+You don’t want to commit half-done work.
+
+You don’t want to lose it either.
+
+Use git stash to save your work-in-progress, clean your working directory, and switch branches safely.
 
 
 
