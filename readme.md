@@ -187,9 +187,31 @@ to simply delete a branch:
 ==============================
 make sure you come out of the branch and then execute,  git branch -d feature/addtocart
 
+You can cross verfiy whether it got deleted on git repo too using:
+git fetch -p
+git branch -r
+Example:
+> git fetch -p
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.07 KiB | 59.00 KiB/s, done.
+> 
+From https://github.com/Sudhavalli1106/practicematrimorphosis
+   4fc3c71..64056c8  main       -> origin/main
+PS C:\Sudha\Matrimorphosis - Batch 2\Git hub practice\practicematrimorphosis> git branch -r
+  origin/HEAD -> origin/main
+  origin/main
+
 To push to changes to remote git repo:
 ======================================
 git push origin --delete feature/addtocart
 
 git push origin --delete feature/addtocart
 
+to clean up your local for unwanted files:
+git rm testfeature.js   # Remove the file from git and disk
+git commit -m "removed unwanted file"
+
+to switch between branches: git switch branch_name    example: git switch main   or git switch feature/paymentgateway
