@@ -215,3 +215,17 @@ git rm testfeature.js   # Remove the file from git and disk
 git commit -m "removed unwanted file"
 
 to switch between branches: git switch branch_name    example: git switch main   or git switch feature/paymentgateway
+
+Stash:
+Why stashing?
+
+
+Scenario:
+ git switch main
+error: Your local changes to the following files would be overwritten by checkout:
+        viewcart.js
+Please commit your changes or stash them before you switch branches.
+Aborting
+you cant switch to another branch unless and until you either commit your change or stash it if you are in half-way to do the task
+
+
