@@ -178,3 +178,18 @@ now if you execute git branch command the output will be
  2 files changed, 2 insertions(+), 1 deletion(-)
  create mode 100644 practicebranch.js
 step 5: git push origin feature/addtocart
+
+To force delete a branch
+========================
+git branch -D feature/addtocart
+
+to simply delete a branch:
+==============================
+make sure you come out of the branch and then execute,  git branch -d feature/addtocart
+
+To push to changes to remote git repo:
+======================================
+git push origin --delete feature/addtocart
+
+git push origin --delete feature/addtocart
+
