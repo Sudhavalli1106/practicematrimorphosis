@@ -217,6 +217,7 @@ git commit -m "removed unwanted file"
 to switch between branches: git switch branch_name    example: git switch main   or git switch feature/paymentgateway
 
 Stash:
+======
 Why stashing?
 
 
@@ -227,5 +228,29 @@ error: Your local changes to the following files would be overwritten by checkou
 Please commit your changes or stash them before you switch branches.
 Aborting
 you cant switch to another branch unless and until you either commit your change or stash it if you are in half-way to do the task
+
+git stash
+
+then withc to main using git switch main
+work on the file on main -> git add filename => git commit => git pull => git push
+then move to stashed branch => git switch cartdetails => git stash pop => do changes on the file you want => git add filename=> git commit => git pull => git push
+
+Stash your changes
+git stash
+
+See what you’ve stashed:
+git stash list
+
+Apply your stash (get your work back):
+git stash apply
+
+Apply and delete stash in one go:
+git stash pop
+
+Drop/delete a specific stash:
+git stash drop stash@{0}
+
+Clear all stashes
+git stash clear
 
 
