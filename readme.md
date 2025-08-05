@@ -210,4 +210,8 @@ git push origin --delete feature/addtocart
 
 git push origin --delete feature/addtocart
 
+to clean up your local for unwanted files:
+git rm testfeature.js   # Remove the file from git and disk
+git commit -m "removed unwanted file"
 
+to switch between branches: git switch branch_name    example: git switch main   or git switch feature/paymentgateway
