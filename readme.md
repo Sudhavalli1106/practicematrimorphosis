@@ -275,3 +275,25 @@ Author: sudhavalli <sudhavalli.parthasarathy@matrimony.com>
 Date:   Tue Aug 5 14:34:22 2025 +0530
 
 
+
+Summary:
+| Step         | Purpose                   |
+| ------------ | ------------------------- |
+| `git add`    | Stage changes             |
+| `git commit` | Save to your local repo   |
+| `git push`   | Upload to remote (GitHub) |
+
+
+You can commit without internet. This makes Git powerful:
+
+Work anywhere.
+
+Commit often.
+
+Push later when you're online.
+1. Local vs Remote Workflow
+git commit: Saves your changes locally (like saving a draft).
+
+git push: Uploads those commits to the remote (like submitting the draft online).
+
+
