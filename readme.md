@@ -215,3 +215,25 @@ git rm testfeature.js   # Remove the file from git and disk
 git commit -m "removed unwanted file"
 
 to switch between branches: git switch branch_name    example: git switch main   or git switch feature/paymentgateway
+
+To make changes to the feature file and then update on git repo:
+==================================================================
+git switch branch_name    example: git switch feature/paymentgateway
+git add filename   example: git add testpaymentgateway.ts
+
+git commit -m "Describe the change you made"
+git push origin feature   example git push origin feature/paymentgateway
+
+Steps to Merge feature Branch into main:
+========================================
+git checkout main
+git pull origin main
+git merge feature/paymentgateway
+git push origin main
+git branch -d feature
+git push origin --delete feature
+
+
+
+
+
