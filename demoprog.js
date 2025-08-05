@@ -3,4 +3,5 @@ let fname="parthasarathy"
 let childname="raga"
 let spousename="Maniyappan"
 let twin = "rag ram"
+let location = "Chennai"
 
